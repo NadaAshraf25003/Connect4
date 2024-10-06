@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="connect4.css">
+    <script src="connect4.js"></script>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: rgb(174, 205, 240);
+    }
+    h1{
+        color: rgb(8, 88, 113);
+    }
+
+    #winner{
+        color: rgb(122, 40, 100);
+        font-size: 30px;
+    }
+
+    #board {
+        /* for full screen  */
+        height: 540px;
+        width: 630px;
+
+        /* for media  */
+        /* max-height: 620px;
+        max-width: 730px; */
+
+        background-color: blue;
+        border: 7px solid rgb(187, 229, 255);
+        border-radius: 20px;
+        box-shadow: 1px 5px 40px white;
+        
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    .tile {
+        /* for full screen  */
+        height: 70px;
+        width: 70px;
+
+        /* for media  */
+        /* height: 10vw;
+        width: 10vw; */
+        
+        margin: 5px;
+        /* Circle */
+        background-color: rgb(174, 205, 240);
+        border-radius: 50%;
+        /* width: 18px; */
+        border: 5px solid rgb(187, 229, 255);
+    }
+
+    .red-piece {
+        background-color: red;
+    }
+
+    .yellow-piece {
+        background-color: yellow;
+    }
+    @media (max-width:487px){
+        #board {
+        /* height: 353px; */
+        width: 353px;
+    }
+    .tile {
+        height: 49px;
+        width: 30px;    
+        }
+   
+    }
+</style>
+<body>
+    <h1>Connect 4</h1>
+    <h2 id="winner"></h2>
+    <div id="board"></div>
+    
+    
+</body>
+</html>
